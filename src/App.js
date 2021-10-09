@@ -11,10 +11,14 @@ import News from './components/News';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
+
+      {/* Navbar section */}
       <div className="navbar">
         <Navbar/>
       </div>
+
+      {/* Main section */}
       <div className="main">
         <Layout>
           <div className='routes'>
@@ -37,9 +41,20 @@ function App() {
             </Switch>
           </div>
         </Layout>
-      </div>
-      <div className="footer">
 
+
+        {/* footer section*/}
+        <div className="footer">
+          <Typography.Title level={5} style={{color:'white', textAlign:'center'}}>
+            CryptoWorld <br/>
+            All rights reserved
+          </Typography.Title>
+          <Space>
+            <Link to='/'>Home</Link>
+            <Link to='/exchanges'>Exchanges</Link>
+            <Link to='/news'>News</Link>
+          </Space>
+        </div>
       </div>
     </div>
   );

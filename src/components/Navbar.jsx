@@ -14,21 +14,21 @@ export default function Navbar() {
                     <Link to='/'>CryptoWorld</Link>
                 </Typography.Title>
                 {/* <Button className='menu-container'></Button> */}
-                <Menu theme="dark">
-                    <Menu.Item icon={<HomeOutlined/>}>
-                        <Link to='/'>Home</Link>
-                    </Menu.Item>
-                    <Menu.Item icon={<FundOutlined/>}>
-                        <Link to='/crypto'>Cryptocurrencies</Link>
-                    </Menu.Item>
-                    <Menu.Item icon={<MoneyCollectOutlined/>}>
-                        <Link to='/exchange'>Exchange</Link>
-                    </Menu.Item>
-                    <Menu.Item icon={<BulbOutlined/>}>
-                        <Link to='/news'>News</Link>
-                    </Menu.Item>
-                </Menu>
             </div>
+            <Menu theme="dark">
+                <Menu.Item icon={<HomeOutlined/>}>
+                    <Link to='/'>Home</Link>
+                </Menu.Item>
+                <Menu.Item icon={<FundOutlined/>}>
+                    <Link to='/cryptocurrencies'>Cryptocurrencies</Link>
+                </Menu.Item>
+                <Menu.Item icon={<MoneyCollectOutlined/>}>
+                    <Link to='/exchanges'>Exchange</Link>
+                </Menu.Item>
+                <Menu.Item icon={<BulbOutlined/>}>
+                    <Link to='/news'>News</Link>
+                </Menu.Item>
+            </Menu>
         </div>
     )
 }
