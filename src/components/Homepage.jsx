@@ -4,6 +4,8 @@ import { Typography, Row, Col, Statistic } from 'antd';
 import { Link } from 'react-router-dom';
 import { useGetCryptosQuery } from '../services/cryptoApi';
 import Cryptocurrencies from './Cryptocurrencies';
+import News from './News';
+
 
 
 export default function Homepage() {
@@ -41,6 +43,13 @@ export default function Homepage() {
                 <Typography.Title level={3} className='show-more'><Link to='/cryptocurrencies'>Show More</Link></Typography.Title>
             </div>
             <Cryptocurrencies simplified/>
+
+            {/* Crpyto News section */}
+            <div className="home-heading-container">
+                <Typography.Title level={2} className="home-title">Latest Crypto News</Typography.Title>
+                <Typography.Title level={3}><Link to="/news">Show more</Link></Typography.Title>
+            </div>
+            <News simplified />
         </>
     )
 }
